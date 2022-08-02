@@ -1,0 +1,41 @@
+<div class="mainBox">
+    <h1 class="title" id="siNewQuiz">Modifier les questions ?</h1>
+
+    <button
+        class="add"
+        routerLink="/connected/edit-quiz-menu/new-quiz-theme/config-new-quiz/question"
+    >
+        Ajouter
+    </button>
+
+    <div class="slot01" id="slot01">
+        <h1 class="name">[QUESTION HERE]</h1>
+    </div>
+    <button class="modif" id="but01" (click)="modifStart(0)">Modifier</button>
+
+    <div class="slot01" id="slot02">
+        <h1 class="name">[QUESTION HERE]</h1>
+    </div>
+    <button class="modif" id="but02" (click)="modifStart(1)">Modifier</button>
+
+    <div class="slot01" id="slot03">
+        <h1 class="name">[QUESTION HERE]</h1>
+    </div>
+    <button class="modif" id="but03" (click)="modifStart(2)">Modifier</button>
+
+    <div class="allButton">
+        <button class="back" id="siNewQuizButton" (click)="exit()">
+            Terminer
+        </button>
+
+        <button class="nav" id="left" (click)="nextFct(-3)">
+            Page précédente
+        </button>
+
+        <h1 class="nav" id="nbQs">EE/EE</h1>
+
+        <button class="nav" id="right" (click)="nextFct(3)">
+            Page suivante
+        </button>
+    </div>
+</div>

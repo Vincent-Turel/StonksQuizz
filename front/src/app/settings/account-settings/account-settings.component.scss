@@ -1,0 +1,70 @@
+@import "../../../styles/item";
+@import "src/styles/main-box";
+@import "src/styles/variables";
+
+.mainContent {
+    margin-top: 7%;
+}
+
+#title {
+    font-weight: bold;
+    font-size: 1.8em;
+    color: white;
+    text-transform: uppercase;
+}
+
+.horiz_wrapper {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: $height/8;
+    display: flex;
+    flex-direction: row;
+}
+
+.writeItem {
+    height: $height/4.2;
+    margin: 5% auto auto;
+    background-color: white;
+    border-radius: 10px;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    cursor: pointer;
+    outline: none;
+    font-size: 4vh;
+}
+
+.item {
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+.green {
+    background-color: $green;
+    width: 25%;
+    height: $height/6;
+    margin-top: $height/12;
+    margin-right: 5%;
+    margin-left: auto;
+}
+
+.red {
+    background-color: #f33d3d;
+    width: 25%;
+    height: $height/4;
+    margin-top: $height/25;
+    margin-left: 5%;
+}
+
+.textBox {
+    border: 2px solid #ccc;
+    background-color: #f8f8f8;
+    resize: none;
+    font-size: 6vh;
+    width: 85%;
+}

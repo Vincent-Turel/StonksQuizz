@@ -1,0 +1,207 @@
+<div class="mainBox">
+    <div id="header" class="title">
+        <span
+            *ngIf="!quizPlayService.isOver"
+            id="title_question1"
+            class="header"
+            >Question {{ quizPlayService.numQuestion }} :</span
+        >
+        <span *ngIf="quizPlayService.isOver" id="title_question2" class="header"
+            >Résultat :</span
+        >
+        <span *ngIf="!quizPlayService.isOver" id="nb_question" class="header"
+            >{{ quizPlayService.numQuestion }}/{{
+                quizPlayService.totalQuestion
+            }}</span
+        >
+    </div>
+
+    <div class="mainContent">
+        <div
+            *ngIf="
+                !quizPlayService.wrongAnswer &&
+                !quizPlayService.rightAnswer &&
+                !quizPlayService.isOver
+            "
+            class="question"
+        >
+            <div id="question" class="item sentence">
+                {{ question }}
+            </div>
+            <div *ngIf="isOpenQuestion; else closedQuestion" class="answers">
+                <div *ngFor="let answer of answers">
+                    <div>
+                        <span
+                            appSlowClick
+                            (throttleClick)="onSubmitAnswer(answer, $event)"
+                            class="item answer button"
+                        >
+                            {{ answer.value }}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <ng-template #closedQuestion>
+            <div class="answers">
+                <div>
+                    <span
+                        appSlowClick
+                        (throttleClick)="onSubmitAnswer(answers[0], $event)"
+                        class="item answer button"
+                        id="answer1"
+                    >
+                        Bien sûr !
+                    </span>
+                </div>
+                <div>
+                    <span
+                        appSlowClick
+                        (throttleClick)="onSubmitAnswer(answers[1], $event)"
+                        class="item answer button"
+                        id="answer2"
+                    >
+                        Je ne pense pas...
+                    </span>
+                </div>
+            </div>
+        </ng-template>
+
+        <div
+            *ngIf="quizPlayService.wrongAnswer && !quizPlayService.isOver"
+            class="wrong"
+        >
+            <div class="item sentence">Ce n'est pas la bonne réponse.</div>
+            <div class="horiz_wrapper">
+                <div>
+                    <img
+                        [hidden]="!hasImage()"
+                        [style.visibility]="
+                            quizPlayService.statusAnswer ? 'visible' : 'hidden'
+                        "
+                        alt=""
+                        src="{{ this.image }}"
+                    />
+                </div>
+                <div class="full-height">
+                    <div
+                        appSlowClick
+                        (throttleClick)="onShowAnswer($event)"
+                        *ngIf="
+                            !quizPlayService.statusAnswer;
+                            else answerExplanation
+                        "
+                        class="item button explanation"
+                        id="id2"
+                    >
+                        Voir la réponse ?
+                    </div>
+                    <div class="horiz_wrapper buttons">
+                        <div class="full-height">
+                            <div
+                                appSlowClick
+                                (throttleClick)="onReturn($event)"
+                                class="item button"
+                                id="id3"
+                            >
+                                Retour
+                            </div>
+                        </div>
+                        <div class="full-height">
+                            <div
+                                appSlowClick
+                                (throttleClick)="onNextQuestion($event)"
+                                class="item button"
+                                id="id4"
+                            >
+                                Suivant
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <ng-template #answerExplanation>
+            <div class="item explanation">
+                {{ quizPlayService.explanation }}
+            </div>
+        </ng-template>
+
+        <div
+            *ngIf="quizPlayService.rightAnswer && !quizPlayService.isOver"
+            class="right"
+        >
+            <div class="item sentence">Super ! C'est la bonne réponse !</div>
+            <div class="horiz_wrapper">
+                <div [hidden]="!hasImage()">
+                    <img src="{{ image }}" alt="" />
+                </div>
+                <div class="full-height">
+                    <div *ngIf="true; then answerExplanation"></div>
+                    <div class="full-height">
+                        <span
+                            class="item button"
+                            id="id5"
+                            appSlowClick
+                            (throttleClick)="onNextQuestion($event)"
+                            >Suivant</span
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div *ngIf="quizPlayService.isOver">
+            <div class="item sentence">
+                Vous avez répondu juste pour
+                {{ quizPlayService.countRight }} questions sur
+                {{ quizPlayService.totalQuestion }} !
+            </div>
+            <div
+                *ngIf="
+                    quizPlayService.countRight >
+                    quizPlayService.totalQuestion / 2
+                "
+                class="lastSentence explanation item"
+            >
+                Les quiz sont là pour vous faire découvrir de nouvelles choses.
+                Ici, vous maitrisez le sujet ! Félicitations !
+            </div>
+            <div
+                *ngIf="
+                    quizPlayService.countRight <=
+                    quizPlayService.totalQuestion / 2
+                "
+                class="lastSentence explanation item"
+            >
+                Les quiz sont là pour vous faire découvrir de nouvelles choses.
+                Ici, vous ne maitrisez pas encore le sujet. Heuresement qu'il
+                n'y a pas d'âge pour apprendre !
+            </div>
+            <div class="horiz_wrapper buttons">
+                <div class="full-height">
+                    <div
+                        appSlowClick
+                        (throttleClick)="onRetry($event)"
+                        class="item button element"
+                        id="id6"
+                    >
+                        Réessayer
+                    </div>
+                </div>
+                <div class="full-height">
+                    <div
+                        appSlowClick
+                        (throttleClick)="onEnd($event)"
+                        class="item button"
+                        id="id7"
+                    >
+                        Suivant
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

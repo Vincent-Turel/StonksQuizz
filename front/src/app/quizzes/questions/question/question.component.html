@@ -1,0 +1,17 @@
+<div class="card">
+    <h2>
+        <i class="fab fa-leanpub"></i>
+        {{ question.label }}
+    </h2>
+    <div id="answer" *ngFor="let answer of question.answers; let i = index">
+        <line>{{ i }} - {{ answer.value }}</line>
+        <i
+            id="correct"
+            *ngIf="answer.isCorrect"
+            class="fas fa-check-square"
+        ></i>
+    </div>
+    <button id="delete" class="button-card" (click)="deleteQuestion()">
+        Delete
+    </button>
+</div>

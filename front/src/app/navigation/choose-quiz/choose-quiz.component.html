@@ -1,0 +1,8 @@
+<div class="mainBox">
+    <h1 class="title">Quel quiz souhaitez-vous ?</h1>
+
+    <app-carousel
+        [service]="chooseQuizService"
+        (chosenItem)="onSubmitTheme($event)"
+    ></app-carousel>
+</div>

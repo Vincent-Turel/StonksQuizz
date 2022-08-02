@@ -1,0 +1,35 @@
+<div class="navigation-bar">
+    <div appSlowClick class="menu" (throttleClick)="goHomeScreen()">
+        <img class="homeImg" src="../assets/images/home.png" alt="home" />
+    </div>
+
+    <div appSlowClick class="doQuiz" (throttleClick)="goChooseTheme()">
+        <img
+            *ngIf="tooBig()"
+            class="otherImg"
+            src="../assets/images/start.png"
+            alt="start"
+        />
+        <span>Faire un quiz</span>
+    </div>
+
+    <div appSlowClick class="myQuiz" (throttleClick)="goEditQuizMenu()">
+        <img
+            *ngIf="tooBig()"
+            class="otherImg"
+            src="../assets/images/add.png"
+            alt="add"
+        />
+        <span>Mes quiz</span>
+    </div>
+
+    <div appSlowClick class="setting" (throttleClick)="goSettings()">
+        <img
+            *ngIf="tooBig()"
+            class="otherImg"
+            src="../assets/images/setting.png"
+            alt="setting"
+        />
+        <span>Mes réglages</span>
+    </div>
+</div>

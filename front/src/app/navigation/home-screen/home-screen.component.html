@@ -1,0 +1,44 @@
+<div class="block1">
+    <div class="block1_1">
+        <img
+            class="avatar"
+            src="../assets/images/account_box.png"
+            alt="your avatar"
+        />
+    </div>
+    <div class="block1_2">
+        <div class="block1_2_1">
+            <div>
+                <img
+                    class="smiley"
+                    src="../assets/images/smiley.png"
+                    alt="smiley"
+                />
+            </div>
+            <div class="bubble-box">
+                <span class="bubbleEmoji"
+                    >Bienvenue {{ this.user.firstName }}</span
+                >
+            </div>
+        </div>
+        <div class="block1_2_2">
+            <div class="name">
+                {{ this.user.firstName }} {{ this.user.lastName }}
+            </div>
+        </div>
+    </div>
+</div>
+<div class="block2">
+    <div class="block2_1">
+        <div class="score-card" id="green-card">Nombre de quiz finis</div>
+        <div class="score-card">{{ this.user.finishScore }}</div>
+    </div>
+    <div class="block2_2">
+        <div class="score-card" id="blue-card">Nombre de quiz créés</div>
+        <div class="score-card">{{ this.user.creationScore }}</div>
+    </div>
+    <div class="block2_3">
+        <div class="score-card" id="purple-card">Score</div>
+        <div class="score-card" id="score">{{ this.user.score }}</div>
+    </div>
+</div>

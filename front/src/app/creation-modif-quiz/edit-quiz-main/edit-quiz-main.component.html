@@ -1,0 +1,34 @@
+<div class="mainBox">
+    <h1 class="title">Modifier le nom du quiz ?</h1>
+
+    <form>
+        <p class="quizName">
+            Entrez ici le nouveau nom de votre quiz :
+            <input
+                type="text"
+                name="quizName"
+                class="textBox"
+                id="input"
+                placeholder="[QUIZ NAME]"
+            />
+        </p>
+    </form>
+
+    <img id="imgQ" src="" class="quizPicture" (click)="changePicture()" />
+
+    <h1 class="selectImg" (click)="changePicture()">>Modifier votre image</h1>
+
+    <h1 class="modifQuestion" (click)="changeQuestion()">
+        >Modifier les questions ?
+    </h1>
+
+    <h1 class="modifQuestion" (click)="delete()">>Suprimer le quiz ?</h1>
+
+    <button class="cancel" routerLink="/connected/edit-quiz-menu/edit-quiz">
+        Annuler
+    </button>
+
+    <button appSlowClick class="button" (click)="validate()">
+        Enregistrer
+    </button>
+</div>

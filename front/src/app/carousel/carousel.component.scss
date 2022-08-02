@@ -1,0 +1,124 @@
+#product-carousel-container {
+    position: relative;
+    width: 50%;
+    margin: auto;
+}
+
+#product-carousel {
+    height: 50vw;
+    list-style: none;
+    position: relative;
+    margin: -18vh 0 0;
+
+    li {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        left: 50%;
+        top: 0;
+        width: 50vm;
+        height: 100vh;
+        padding: 0;
+        cursor: pointer;
+        transition: transform 1.8s cubic-bezier(0.19, 1, 0.22, 1), z-index 0.5s;
+        z-index: 0;
+
+        .name {
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-bottom: 2px solid black;
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+            background-color: white;
+            float: top;
+        }
+
+        &.theme-0 {
+            z-index: 2;
+            transform: translateX(-50%) scale(1) translate3d(0, 0, 15px);
+        }
+
+        &.theme-1 {
+            z-index: 1;
+            transform: translateX(-50%) scale(0.7) translate3d(100%, -3%, 10px);
+        }
+
+        &.theme-2 {
+            z-index: 0;
+            transform: translateX(-50%) scale(0.5) translate3d(180%, -7%, 0);
+        }
+
+        &.theme-3 {
+            z-index: 0;
+            transform: translateX(-50%) scale(0.5) translate3d(0, -7%, 0);
+        }
+
+        &.theme-4 {
+            z-index: 0;
+            transform: translateX(-50%) scale(0.5) translate3d(-180%, -7%, 0);
+        }
+
+        &.theme-5 {
+            z-index: 1;
+            transform: translateX(-50%) scale(0.7) translate3d(-100%, -3%, 10px);
+        }
+
+        img {
+            width: 40vh;
+            height: 40vh;
+            margin-top: 20vh;
+            transition: transform 0.25s ease-in;
+            border: 2px solid black;
+        }
+    }
+}
+
+#product-carousel-nav {
+    .carousel-nav {
+        position: absolute;
+        top: 40vh;
+        width: 50px;
+        height: 50px;
+        border-top: 10px solid #000000;
+        border-right: 10px solid #000000;
+        border-bottom: none;
+        border-left: none;
+        background-color: transparent;
+        outline: 0;
+        cursor: pointer;
+
+        &.prev {
+            left: -35%;
+            transform: rotate(-135deg);
+        }
+
+        &.next {
+            right: -35%;
+            transform: rotate(45deg);
+        }
+    }
+}
+
+#carousel-count {
+    position: absolute;
+    font-weight: bold;
+    font-size: 1.5em;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    margin-bottom: 30vh;
+}
+
+#txt {
+    border: none;
+    background: transparent;
+    color: #000;
+    font-weight: bold;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    text-align: right;
+}

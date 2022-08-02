@@ -1,0 +1,31 @@
+<div id="product-carousel-container">
+    <ul id="product-carousel">
+        <li
+            *ngFor="let item of items | slice: 0:6; let i = index"
+            [ngClass]="'theme-' + i"
+        >
+            <img
+                appSlowClick
+                (throttleClick)="onSubmitItem(item.imgUrl)"
+                [src]="item.imgUrl"
+            />
+            <div class="name">{{ item.name }}</div>
+        </li>
+    </ul>
+
+    <div id="product-carousel-nav">
+        <button
+            appSlowClick
+            class="carousel-nav prev"
+            (throttleClick)="shiftTheme(1)"
+        ></button>
+        <button
+            appSlowClick
+            class="carousel-nav next"
+            (throttleClick)="shiftTheme(-1)"
+        ></button>
+    </div>
+    <div id="carousel-count">
+        {{ this.currentItem + 1 }} / {{ this.numberOfItem }}
+    </div>
+</div>

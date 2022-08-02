@@ -1,0 +1,15 @@
+.quiz-list {
+    max-width: 83vw;
+    max-height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.quiz {
+    margin-top: 2vh;
+    max-height: 20vh;
+    max-width: 20vw;
+}
+
+/*# sourceMappingURL=user-list.component.css.map */

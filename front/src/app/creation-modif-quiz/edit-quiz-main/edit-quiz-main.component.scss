@@ -1,0 +1,81 @@
+@import "../../../styles/main-box";
+
+.title {
+    font-size: 50px;
+}
+
+.quizName {
+    padding: 3%;
+    text-align: left;
+    color: black;
+    font-size: 40px;
+    margin-top: 0;
+}
+
+.textBox {
+    margin-top: 1vh;
+    width: 100%;
+    height: 10vh;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    font-size: 8vh;
+}
+
+.quizPicture {
+    width: 42vh;
+    height: 42vh;
+    margin-left: 6vw;
+    margin-top: -7vh;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.selectImg {
+    cursor: pointer;
+    display: flex;
+    margin-left: 30vw;
+    margin-top: -22vw;
+    margin-right: 8vw;
+    font-size: 4vh;
+    background-color: #f8f8f8;
+    border-radius: 2vw;
+    padding: 2vh;
+}
+
+.modifQuestion {
+    cursor: pointer;
+    display: flex;
+    margin-left: 30vw;
+    background-color: #f8f8f8;
+    border-radius: 2vw;
+    padding: 2vh;
+    font-size: 4vh;
+    margin-right: 8vw;
+}
+
+.button {
+    outline: none;
+    display: flex;
+    margin-left: 50vw;
+    font-size: 6vh;
+    border-radius: 1vw;
+    margin-top: -11vh;
+    background-color: #b6d7a8;
+    padding: 1vw;
+    cursor: pointer;
+}
+
+.cancel {
+    outline: none;
+    display: flex;
+    margin-left: 30vw;
+    font-size: 6vh;
+    background-color: #b4a7d6;
+    padding: 1vw;
+    cursor: pointer;
+    border-radius: 1vw;
+}

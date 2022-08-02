@@ -1,0 +1,69 @@
+@import "../new-question-recap/new-question-recap.component.css";
+.question {
+    background-color: #f6b26b;
+}
+
+.textBox {
+    margin-top: 1vh;
+    width: 100%;
+    height: 10vh;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    font-size: 8vh;
+}
+
+.back {
+    display: inline-block;
+    font-size: 8vh;
+    border-radius: 1vh;
+    background-color: #b4a7d6;
+    padding: 1vh;
+    cursor: pointer;
+    margin-left: 10vh;
+}
+
+.register {
+    display: inline-block;
+    font-size: 8vh;
+    float: right;
+    border-radius: 1vh;
+    background-color: #b6d7a8;
+    padding: 1vh;
+    cursor: pointer;
+    margin-right: 10vh;
+}
+
+.modifDesc {
+    display: inline-block;
+    font-size: 8vh;
+    margin-left: 4vw;
+    border-radius: 1vh;
+    background-color: white;
+    padding: 1vh;
+    cursor: pointer;
+}
+
+.rep01 {
+    cursor: pointer;
+}
+
+.rep02 {
+    cursor: pointer;
+}
+
+.delete {
+    font-size: 8vh;
+    margin-top: -5vh;
+    float: right;
+    border-radius: 1vh;
+    background-color: #ea9999;
+    padding: 1vh;
+    cursor: pointer;
+    margin-right: 10vh;
+}
+
+/*# sourceMappingURL=modif-open-question.component.css.map */

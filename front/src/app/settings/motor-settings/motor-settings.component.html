@@ -1,0 +1,52 @@
+<div class="mainBox">
+    <h1 class="title">Réglages de la sensibilité :</h1>
+
+    <div class="mainContent">
+        <div class="horiz_wrapper">
+            <div class="blueItem">Temps en seconde entre 2 clics</div>
+            <div class="writeItem">
+                <div class="range">
+                    <i class="fas fa-redo" aria-hidden="true"></i>
+                    <mat-slider
+                        id="slider1"
+                        class="slider"
+                        (mouseup)="triggerFocusOut(1)"
+                        min="0"
+                        max="200"
+                        step="1"
+                        value="{{ accessibilityService.throttleTime }}"
+                        (input)="onTimingChange($event.value)"
+                    ></mat-slider>
+                    <span class="value"
+                        >{{
+                            accessibilityService.throttleTime / 100
+                                | number: "1.1-1"
+                        }}
+                        s</span
+                    >
+                </div>
+            </div>
+        </div>
+
+        <div class="horiz_wrapper">
+            <div class="blueItem">Deuxième confirmation après un clic</div>
+            <div class="writeItem range">
+                <button id="yes-button" class="button" (click)="onClickYes()">
+                    Oui
+                </button>
+                <button id="no-button" class="button" (click)="onClickNo()">
+                    Non
+                </button>
+            </div>
+        </div>
+
+        <button
+            appSlowClick
+            class="item button green"
+            id="valider"
+            (throttleClick)="goSettingsMenu()"
+        >
+            Valider
+        </button>
+    </div>
+</div>

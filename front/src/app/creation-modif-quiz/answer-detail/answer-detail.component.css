@@ -1,0 +1,53 @@
+.mainBox {
+    display: inline-block;
+    box-sizing: content-box;
+    width: 73vw;
+    height: 73vh;
+    margin: 8vh;
+    background-color: #f6b26b;
+    border-radius: 2vw;
+}
+
+.title {
+    padding: 3%;
+    text-align: left;
+    color: black;
+    font-size: 60px;
+    margin-bottom: -4%;
+    margin-top: -1vh;
+}
+
+.button {
+    display: flex;
+    margin-left: 55vw;
+    font-size: 6vh;
+    border-radius: 1vw;
+    margin-top: -4vw;
+    background-color: #b6d7a8;
+    padding: 1vw;
+    cursor: pointer;
+}
+
+.quizName {
+    padding: 3%;
+    text-align: left;
+    color: black;
+    font-size: 40px;
+    margin-top: 0;
+}
+
+.textBox {
+    outline: none;
+    margin-top: 1vh;
+    width: 100%;
+    height: 40vh;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    font-size: 8vh;
+}
+
+/*# sourceMappingURL=answer-detail.component.css.map */

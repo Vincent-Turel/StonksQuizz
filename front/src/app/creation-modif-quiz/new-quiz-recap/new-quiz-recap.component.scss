@@ -1,0 +1,75 @@
+@import "../../../styles/main-box";
+@import "../../../styles/variables";
+
+.question {
+    background-color: #f6b26b;
+}
+
+.textBox {
+    outline: none;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    width: 96%;
+    margin-left: 2%;
+    height: 10vh;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 8vh;
+}
+
+.nomQuiz {
+    text-align: center;
+    background-color: white;
+    width: 91%;
+    height: 10%;
+    margin-left: 3%;
+    padding: 10px;
+    margin-top: 4%;
+    border-radius: 1vw;
+    font-size: 5vh;
+}
+
+.quizPicture {
+    width: 15vw;
+    height: 15vw;
+    margin-bottom: -1%;
+    margin-top: -1%;
+    margin-left: 10%;
+    cursor: pointer;
+}
+
+.next {
+    outline: none;
+    display: flex;
+    margin-left: 90vh;
+    font-size: 8vh;
+    border-radius: 1vh;
+    margin-top: 3vh;
+    background-color: $green;
+    padding: 1vh;
+    cursor: pointer;
+}
+
+.exit {
+    outline: none;
+    display: flex;
+    margin-left: 10vh;
+    font-size: 8vh;
+    border-radius: 1vh;
+    margin-top: -12vh;
+    background-color: #b4a7d6;
+    padding: 1vh;
+    cursor: pointer;
+}
+
+.recap {
+    display: flex;
+    float: right;
+    width: 50%;
+    background-color: white;
+    border-radius: 1vw;
+    padding: 1vw;
+    margin-right: 2vw;
+}

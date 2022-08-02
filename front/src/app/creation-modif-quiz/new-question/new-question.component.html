@@ -1,0 +1,36 @@
+<div class="mainBox">
+    <h1 class="title">Ajouter une question :</h1>
+
+    <form>
+        <p class="question">
+            <input type="text" name="quizName" class="textBox" id="input" />
+        </p>
+    </form>
+
+    <h1 class="jsp">Réponse :</h1>
+
+    <div class="openClose">
+        <h1
+            appSlowClick
+            class="close"
+            (throttleClick)="closeQuestionFct()"
+            id="close"
+        >
+            Question fermée
+        </h1>
+        <h1
+            appSlowClick
+            class="open"
+            (throttleClick)="openQuestionFct()"
+            id="open"
+        >
+            Question ouverte
+        </h1>
+    </div>
+
+    <button appSlowClick class="next" (throttleClick)="validate()">
+        Suivant
+    </button>
+
+    <button class="exit" (click)="exit()">Terminer</button>
+</div>

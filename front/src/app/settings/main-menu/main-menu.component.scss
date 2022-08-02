@@ -1,0 +1,61 @@
+@import "../../../styles/item";
+@import "src/styles/main-box";
+
+.mainContent {
+    margin-top: 5%;
+}
+
+.mainMenu {
+    margin-top: 10vh;
+}
+
+.horiz_wrapper {
+    margin-bottom: $height/8;
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    flex-direction: row;
+}
+
+.writeItem,
+.blueItem {
+    text-align: center;
+    vertical-align: middle;
+    height: $height/4;
+    line-height: $height/4;
+}
+
+.writeItem {
+    background-color: white;
+    border-radius: 0 10px 10px 0;
+    width: 65%;
+}
+
+.blueItem {
+    font-weight: bold;
+    font-size: 1.4em;
+    background-color: #4794cd;
+    border-radius: 10px 0 0 10px;
+    width: 35%;
+}
+
+.edit {
+    font-size: 1.2em;
+    float: right;
+    background-color: #4794cd;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 10px;
+    width: 35%;
+    line-height: $height/4;
+    height: $height/4;
+}
+
+.button {
+    cursor: pointer;
+    outline: none;
+}
+
+#header {
+    margin-bottom: $height/20;
+}

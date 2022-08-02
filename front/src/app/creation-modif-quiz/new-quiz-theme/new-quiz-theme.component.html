@@ -1,0 +1,8 @@
+<div class="mainBox">
+    <h1 class="title">Quel thème souhaitez vous ?</h1>
+
+    <app-carousel
+        [service]="themeCreateService"
+        (chosenItem)="onSubmitTheme($event)"
+    ></app-carousel>
+</div>

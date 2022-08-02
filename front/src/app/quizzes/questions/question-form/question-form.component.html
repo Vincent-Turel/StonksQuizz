@@ -1,0 +1,58 @@
+<div class="card">
+    <h2>Create a new question</h2>
+    <form
+        class="question-form"
+        [formGroup]="questionForm"
+        (ngSubmit)="onSubmit()"
+    >
+        <div class="form-group">
+            <label id="title" for="label">Title</label>
+            <input
+                class="form-control"
+                type="text"
+                id="label"
+                [formControlName]="'label'"
+            />
+        </div>
+        <div formArrayName="answers">
+            <div
+                id="answer"
+                class="form-group"
+                *ngFor="let answer of answers.controls; let i = index"
+            >
+                <div class="answer-form" [formGroupName]="i">
+                    <label>
+                        Answer
+                        <input
+                            class="form-control"
+                            type="text"
+                            [formControlName]="'value'"
+                        />
+                    </label>
+                    <br />
+                    <label>
+                        Correct
+                        <input
+                            class="form-control"
+                            type="checkbox"
+                            [formControlName]="'isCorrect'"
+                        />
+                    </label>
+                </div>
+            </div>
+            <button type="button" class="button-card" (click)="onAddAnswer()">
+                Add answer
+            </button>
+        </div>
+        <br />
+        <button
+            type="submit"
+            class="button-card"
+            [disabled]="questionForm.invalid"
+        >
+            Create
+        </button>
+    </form>
+</div>
+<!-- Uncomment below to see your form structure and how it changes-->
+<!-- <br><br>{{quizForm.getRawValue() | json}} -->

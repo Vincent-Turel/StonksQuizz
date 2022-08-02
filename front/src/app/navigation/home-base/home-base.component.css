@@ -1,0 +1,82 @@
+.master {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    box-sizing: content-box;
+    width: 35vw;
+    height: 100%;
+    margin-left: 2vw;
+    background-color: #ea9999;
+}
+
+.title {
+    display: flex;
+    font-size: 5vh;
+    font-style: italic;
+    margin-left: 2vh;
+    width: 250vh;
+    opacity: 100%;
+}
+
+.box {
+    position: absolute;
+    z-index: 1;
+    background-color: #f6b26b;
+    margin-top: 7vw;
+    margin-left: 20vh;
+    width: 68vw;
+    height: 70vh;
+}
+
+.image {
+    height: 5vw;
+    margin-left: 2vh;
+    margin-top: 2vh;
+}
+
+.image2 {
+    height: 5vw;
+    margin-top: 2vh;
+    float: right;
+    margin-right: 2vh;
+}
+
+.dialog {
+    background-color: white;
+    padding: 1vh;
+    width: 50vh;
+    border-radius: 2vh;
+    margin-top: -9vh;
+    margin-left: 16vh;
+}
+
+.dialog3 {
+    background-color: white;
+    padding: 1vh;
+    width: 110vh;
+    border-radius: 2vh;
+    margin-top: -9vh;
+    margin-left: 16vh;
+}
+
+.dialog2 {
+    margin-top: 7vh;
+    background-color: white;
+    padding: 1vh;
+    width: 120vh;
+    border-radius: 2vh;
+    margin-left: 2vh;
+}
+
+.dialog4 {
+    background-color: white;
+    padding: 1vh;
+    width: 120vh;
+    border-radius: 2vh;
+    margin-left: 2vh;
+}
+
+/*# sourceMappingURL=home-base.component.css.map */

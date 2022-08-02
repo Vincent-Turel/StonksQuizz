@@ -1,0 +1,108 @@
+@import "../../../styles/item";
+@import "src/styles/main-box";
+@import "src/styles/variables";
+
+.mainContent {
+    margin-top: 8%;
+}
+
+#title {
+    font-weight: bold;
+    font-size: 1.8em;
+    color: white;
+    text-transform: uppercase;
+}
+
+.horiz_wrapper {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: $height/8;
+    display: flex;
+    flex-direction: row;
+}
+
+.writeItem {
+    background-color: white;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 0 10px 10px 0;
+    width: 65%;
+    height: 1.25 * $height/4;
+    line-height: $height/8;
+}
+
+.blueItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    background-color: #4794cd;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 10px 0 0 10px;
+    width: 35%;
+    height: 1.25 * $height/4;
+    line-height: $height/8;
+}
+i {
+    margin-top: $height/8;
+}
+.item {
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+.write {
+    background-color: white;
+    width: 45%;
+    height: $height/4.5;
+    line-height: $height/4.5;
+}
+
+.green {
+    margin-right: 5%;
+    background-color: $green;
+    width: 25%;
+    height: $height/6;
+    border-radius: 1vw;
+}
+
+#valider {
+    float: right;
+    margin-top: 4%;
+}
+
+.slider {
+    width: 70%;
+}
+
+#header {
+    margin-bottom: $height/11;
+}
+
+#click {
+    text-transform: uppercase;
+    margin-left: auto;
+}
+
+.button {
+    color: black;
+    width: 14vw;
+    height: 8vh;
+    font-size: 4vh;
+    margin-left: 1vw;
+    margin-top: 3vh;
+    cursor: pointer;
+    outline: none;
+}
+
+.chosen-button {
+    color: black;
+    background-color: $green;
+    width: 14vw;
+    height: 8vh;
+    font-size: 4vh;
+    margin-left: 1vw;
+}

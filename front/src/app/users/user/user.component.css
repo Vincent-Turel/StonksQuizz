@@ -1,0 +1,49 @@
+.card {
+    background: #f6b26b;
+    border-radius: 15px;
+    display: inline-block;
+    margin: 1rem;
+    position: relative;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+    padding: 0 1em 1em 1em;
+}
+
+.button-card {
+    background-color: #ffffff;
+    border: solid 1px #34363c;
+    color: #34363c;
+    font-weight: bold;
+    padding: 0.5em 1em;
+}
+
+.button-card:hover {
+    cursor: pointer;
+}
+
+.card {
+    text-align: center;
+    height: 18vh;
+    width: 23vh;
+    line-height: 4vh;
+}
+
+.names {
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    font-weight: bold;
+    font-size: 4vh;
+}
+
+.button {
+    color: black;
+    background-color: #6aa84f;
+    width: 10vw;
+    height: 5vh;
+    font-size: 2vh;
+    font-weight: bold;
+    margin-top: 2vh;
+    border-radius: 2vh;
+    outline: none;
+}
+
+/*# sourceMappingURL=user.component.css.map */

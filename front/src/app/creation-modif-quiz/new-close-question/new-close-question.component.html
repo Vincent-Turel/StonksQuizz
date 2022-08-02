@@ -1,0 +1,30 @@
+<div class="mainBox">
+    <h1 class="title">Récapitulatif :</h1>
+
+    <p class="question" id="question">[INSERT HERE THE QUESTION]</p>
+
+    <h1 class="rep01" id="true">
+        Bien sûr !<input
+            appSlowClick
+            type="checkbox"
+            id="rep01"
+            class="checkbox"
+            (throttleClick)="fctTrue()"
+        />
+    </h1>
+    <h1 class="rep02" id="false">
+        Je ne pense pas...<input
+            appSlowClick
+            type="checkbox"
+            id="rep02"
+            class="checkbox"
+            (throttleClick)="fctFalse()"
+        />
+    </h1>
+
+    <button appSlowClick class="next" (throttleClick)="validate()">
+        Suivant
+    </button>
+
+    <button class="exit" (click)="back()">Annuler</button>
+</div>

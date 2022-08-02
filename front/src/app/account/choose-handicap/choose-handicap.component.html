@@ -1,0 +1,38 @@
+<div class="mainBox">
+    <div class="title">Avez-vous une gêne ?</div>
+
+    <div class="elements-box">
+        <div class="inline-box">
+            <div class="description">Visuelle :</div>
+            <div class="handicap-buttons">
+                <button id="yes-visual" class="button" (click)="yesVisual()">
+                    Oui
+                </button>
+                <button id="no-visual" class="button" (click)="noVisual()">
+                    Non
+                </button>
+            </div>
+        </div>
+        <br />
+        <div class="inline-box">
+            <div class="description">Motrice :</div>
+            <div class="handicap-buttons">
+                <button id="yes-motor" class="button" (click)="yesMotor()">
+                    Oui
+                </button>
+                <button id="no-motor" class="button" (click)="noMotor()">
+                    Non
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button type="submit" class="back-button" (click)="back()">
+            Retour
+        </button>
+        <button type="submit" class="validate-button" (click)="validate()">
+            Valider
+        </button>
+    </div>
+</div>

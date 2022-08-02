@@ -1,0 +1,72 @@
+.mainBox {
+    display: inline-block;
+    box-sizing: content-box;
+    width: 73vw;
+    height: 73vh;
+    margin: 8vh;
+    background-color: #f6b26b;
+    border-radius: 2vw;
+}
+
+.title {
+    padding: 3%;
+    text-align: left;
+    color: black;
+    font-size: 60px;
+    margin-bottom: -4%;
+    margin-top: -1vh;
+}
+
+.title {
+    font-size: 8vh;
+}
+
+.user-form {
+    text-align: center;
+    font-size: 5vh;
+    margin: 2vh 5vw;
+}
+
+.input-custom {
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 8vh;
+    font-weight: bold;
+    border-radius: 2vh;
+    width: 50vw;
+    height: 10vh;
+    margin-top: 6vh;
+    margin-left: 5vw;
+    border: solid #9fc5f8 3vh;
+}
+
+.buttons {
+    margin-top: 5vh;
+}
+
+.clear-button {
+    outline: none;
+    color: black;
+    background-color: #e06666;
+    width: 20vw;
+    height: 13vh;
+    font-size: 10vh;
+    font-weight: bold;
+    border-radius: 2vh;
+}
+
+.validate-button {
+    outline: none;
+    color: black;
+    background-color: #6aa84f;
+    width: 20vw;
+    height: 13vh;
+    margin-left: 15vw;
+    font-size: 10vh;
+    font-weight: bold;
+    border-radius: 2vh;
+}
+
+/*# sourceMappingURL=user-form.component.css.map */

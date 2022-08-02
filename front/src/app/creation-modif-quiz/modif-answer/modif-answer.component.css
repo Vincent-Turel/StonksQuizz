@@ -1,0 +1,67 @@
+@import "../answer-detail/answer-detail.component.css";
+.mainBox {
+    display: inline-block;
+    box-sizing: content-box;
+    width: 73vw;
+    height: 73vh;
+    margin: 8vh;
+    background-color: #f6b26b;
+    border-radius: 2vw;
+}
+
+.title {
+    padding: 3%;
+    text-align: left;
+    color: black;
+    font-size: 60px;
+    margin-bottom: -4%;
+    margin-top: -1vh;
+}
+
+.textBox {
+    height: 30vh;
+}
+
+.back {
+    display: inline-block;
+    font-size: 8vh;
+    border-radius: 1vh;
+    background-color: #b4a7d6;
+    padding: 1vh;
+    cursor: pointer;
+    margin-left: 10vh;
+}
+
+.register {
+    display: inline-block;
+    font-size: 8vh;
+    float: right;
+    border-radius: 1vh;
+    background-color: #b6d7a8;
+    padding: 1vh;
+    cursor: pointer;
+    margin-right: 10vh;
+}
+
+.jsp3 {
+    display: inline-block;
+    font-size: 8vh;
+    background-color: white;
+    padding: 1vh;
+    border-radius: 2vh;
+    margin-left: 6vh;
+}
+
+.checkbox {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin-left: 10vh;
+}
+
+.boxtext {
+    font-size: 5vh;
+    display: inline-block;
+}
+
+/*# sourceMappingURL=modif-answer.component.css.map */

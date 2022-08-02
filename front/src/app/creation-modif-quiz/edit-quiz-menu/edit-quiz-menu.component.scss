@@ -1,0 +1,46 @@
+@import "../../../styles/main-box";
+
+.newQuiz {
+    display: inline-block;
+    background-color: #b4a7d6;
+    border-radius: 2vw;
+    margin: 4% 2% 4% 4%;
+    height: 75%;
+    width: 44%;
+    cursor: pointer;
+    line-height: normal;
+}
+
+.modifQuiz {
+    display: inline-block;
+    background-color: #9fc5f8;
+    width: 44%;
+    border-radius: 2vw;
+    margin: 4% 4% 4% 2%;
+    height: 75%;
+    float: right;
+    cursor: pointer;
+    line-height: normal;
+}
+
+.menuImage {
+    margin-left: auto;
+    margin-right: auto;
+    //height: 40%;
+}
+
+.dialogTitle {
+    text-align: center;
+    font-size: 2.4em;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.flexBox {
+    outline: none;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

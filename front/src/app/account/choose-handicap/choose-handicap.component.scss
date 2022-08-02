@@ -1,0 +1,74 @@
+@import "../../../styles/main-box";
+@import "../../../styles/variables";
+
+.mainBox {
+    text-align: center;
+}
+.title {
+    font-weight: bold;
+}
+.elements-box {
+    width: 57vw;
+    margin-top: 6vh;
+    margin-left: 4vw;
+}
+.inline-box {
+    height: 14vh;
+    display: inline-flex;
+    margin-top: 3vh;
+    margin-bottom: 2.25vh;
+}
+.description {
+    background-color: #9fc5f8;
+    color: black;
+    width: 20vw;
+    font-weight: bold;
+    font-size: 6vh;
+    padding-top: 4.5vh;
+    padding-left: 7vw;
+    border-radius: 2vh;
+}
+.handicap-buttons {
+    width: 40vw;
+    background-color: white;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+.buttons {
+    margin-top: 5vh;
+}
+.button {
+    color: black;
+    background-color: white;
+    width: 14vw;
+    height: 8vh;
+    font-size: 4vh;
+    margin-left: 1vw;
+}
+.chosen-button {
+    color: black;
+    background-color: $green;
+    width: 14vw;
+    height: 8vh;
+    font-size: 4vh;
+    margin-left: 1vw;
+}
+.back-button {
+    color: black;
+    background-color: #e06666;
+    width: 20vw;
+    height: 13vh;
+    font-size: 10vh;
+    font-weight: bold;
+    border-radius: 2vh;
+}
+.validate-button {
+    color: black;
+    background-color: #6aa84f;
+    width: 20vw;
+    height: 13vh;
+    margin-left: 15vw;
+    font-size: 10vh;
+    font-weight: bold;
+    border-radius: 2vh;
+}

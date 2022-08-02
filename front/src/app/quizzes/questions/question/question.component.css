@@ -1,0 +1,36 @@
+.card {
+    background: #f6b26b;
+    border-radius: 15px;
+    display: inline-block;
+    margin: 1rem;
+    position: relative;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+    padding: 0 1em 1em 1em;
+}
+
+.button-card {
+    background-color: #ffffff;
+    border: solid 1px #34363c;
+    color: #34363c;
+    font-weight: bold;
+    padding: 0.5em 1em;
+}
+
+.button-card:hover {
+    cursor: pointer;
+}
+
+#answer {
+    margin: 0 0 0 0;
+}
+
+#delete {
+    margin-top: 10px;
+}
+
+#correct {
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+/*# sourceMappingURL=question.component.css.map */

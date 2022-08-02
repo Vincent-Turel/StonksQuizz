@@ -1,0 +1,48 @@
+@import "../../../styles/main-box";
+@import "../answer-detail/answer-detail.component.css";
+
+.textBox {
+    height: 30vh;
+}
+
+.back {
+    display: inline-block;
+    font-size: 8vh;
+    border-radius: 1vh;
+    background-color: #b4a7d6;
+    padding: 1vh;
+    cursor: pointer;
+    margin-left: 10vh;
+}
+
+.register {
+    display: inline-block;
+    font-size: 8vh;
+    float: right;
+    border-radius: 1vh;
+    background-color: #b6d7a8;
+    padding: 1vh;
+    cursor: pointer;
+    margin-right: 10vh;
+}
+
+.jsp3 {
+    display: inline-block;
+    font-size: 8vh;
+    background-color: white;
+    padding: 1vh;
+    border-radius: 2vh;
+    margin-left: 6vh;
+}
+
+.checkbox {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin-left: 10vh;
+}
+
+.boxtext {
+    font-size: 5vh;
+    display: inline-block;
+}

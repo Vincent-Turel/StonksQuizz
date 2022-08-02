@@ -1,0 +1,77 @@
+<div class="mainBox">
+    <h1 class="title">Réglages visuels :</h1>
+
+    <div class="mainContent">
+        <div class="horiz_wrapper">
+            <div class="blueItem">Luminosité</div>
+            <div class="writeItem">
+                <i class="fa fa-sun-o" aria-hidden="true"></i>
+                <mat-slider
+                    id="slider1"
+                    class="slider"
+                    (mouseup)="triggerFocusOut(1)"
+                    min="25"
+                    max="100"
+                    step="1"
+                    value="{{ accessibilityService.brightness }}"
+                    (input)="onBrightnessChange($event.value)"
+                ></mat-slider>
+                <span class="value">{{
+                    accessibilityService.brightness | number: "3.0-1"
+                }}</span>
+            </div>
+        </div>
+
+        <div class="horiz_wrapper">
+            <div class="blueItem">Contraste</div>
+            <div class="writeItem range">
+                <div class="range">
+                    <i class="fa fa-adjust" aria-hidden="true"></i>
+                    <mat-slider
+                        id="slider2"
+                        class="slider"
+                        (mouseup)="triggerFocusOut(2)"
+                        min="50"
+                        max="150"
+                        step="1"
+                        value="{{ accessibilityService.contrast }}"
+                        (input)="onContrastChange($event.value)"
+                    ></mat-slider>
+                    <span class="value">{{
+                        accessibilityService.contrast | number: "3.0-1"
+                    }}</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="horiz_wrapper">
+            <div class="blueItem">Taille du texte</div>
+            <div class="writeItem">
+                <div class="range">
+                    <i class="fa fa-text-height"></i>
+                    <mat-slider
+                        id="slider3"
+                        class="slider"
+                        (mouseup)="triggerFocusOut(3)"
+                        min=".8"
+                        max="1.45"
+                        step=".01"
+                        value="{{ accessibilityService.font }}"
+                        (input)="onFontChange($event.value)"
+                    ></mat-slider>
+                    <span class="value">{{
+                        accessibilityService.font | number: "1.1-1"
+                    }}</span>
+                </div>
+            </div>
+        </div>
+
+        <button
+            appSlowClick
+            class="item button green"
+            (throttleClick)="goSettingsMenu()"
+        >
+            Valider
+        </button>
+    </div>
+</div>

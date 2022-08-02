@@ -1,0 +1,58 @@
+<div class="mainBox">
+    <div class="title">Réglages de la sensibilité :</div>
+
+    <div class="elements-box">
+        <div class="inline-box">
+            <div class="description">Temps en seconde entre 2 clics</div>
+            <div class="slider-box">
+                <i class="fas fa-redo" aria-hidden="true"></i>
+                <mat-slider
+                    id="slider1"
+                    class="slider"
+                    (mouseup)="triggerFocusOut(1)"
+                    min="0"
+                    max="200"
+                    step="1"
+                    value="{{ accessibilityService.throttleTime }}"
+                    (input)="onClickToleranceChange($event.value)"
+                ></mat-slider>
+                <span class="value"
+                    >{{
+                        accessibilityService.throttleTime / 100
+                            | number: "1.1-1"
+                    }}
+                    s</span
+                >
+            </div>
+        </div>
+        <br />
+        <div class="inline-box">
+            <div class="description">Deuxième confirmation après un clic</div>
+            <div class="handicap-buttons">
+                <button
+                    id="yes-confirmation"
+                    class="button"
+                    (click)="yesConfirmation()"
+                >
+                    Oui
+                </button>
+                <button
+                    id="no-confirmation"
+                    class="button"
+                    (click)="noConfirmation()"
+                >
+                    Non
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button type="submit" class="back-button" (click)="back()">
+            Retour
+        </button>
+        <button type="submit" class="validate-button" (click)="validate()">
+            Valider
+        </button>
+    </div>
+</div>

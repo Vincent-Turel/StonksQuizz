@@ -1,0 +1,123 @@
+#! /bin/bash
+
+# Creates a simple sqlite3 database
+# Usage:
+#
+#   $ ./create-sqlite-db
+#
+
+DATABASE_NAME="sqlite3-db.db"
+
+SQLITE_COMMAND="sqlite3 $DATABASE_NAME"
+
+THEME_CREATION_REQ="CREATE TABLE themes (           \
+    id INTEGER PRIMARY KEY AUTOINCREMENT,           \
+    name TEXT NOT NULL,                             \
+    img_url TEXT NOT NULL                           \
+);"
+
+QUIZZES_CREATION_REQ="CREATE TABLE quizzes (        \
+    id INTEGER PRIMARY KEY AUTOINCREMENT,           \
+    img_url TEXT NOT NULL,                          \
+    theme INTEGER NOT NULL,                         \
+    name TEXT NOT NULL                              \
+);"
+
+QUESTIONS_CREATION_REQ="CREATE TABLE questions (    \
+    quiz INTEGER NOT NULL,                          \
+    id INTEGER PRIMARY KEY AUTOINCREMENT,           \
+    label TEXT NOT NULL,                            \
+    isclosed INTEGER NOT NULL,                      \
+    explanation TEXT NOT NULL                       \
+);"
+
+ANSWERS_CREATION_REQ="CREATE TABLE answers (        \
+    id INTEGER PRIMARY KEY AUTOINCREMENT,           \
+    question INTEGER NOT NULL,                      \
+    value TEXT,                                     \
+    iscorrect INTEGER NOT NULL                      \
+);"
+
+USERS_CREATION_REQ="CREATE TABLE users (            \
+    id INTEGER PRIMARY KEY AUTOINCREMENT,           \
+    first_name TEXT NOT NULL,                       \
+    last_name TEXT NOT NULL,                        \
+    contrast INTEGER NOT NULL,                      \
+    text_size INTEGER NOT NULL,                     \
+    click_tolerance INTEGER NOT NULL,               \
+    brightness INTEGER NOT NULL,                    \
+    click_confirmation INTEGER NOT NULL,            \
+    score INTEGER NOT NULL,                         \
+    creation_score INTEGER NOT NULL,                \
+    finish_score INTEGER NOT NULL                   \
+);"
+
+USER_INSERTION_REQ="INSERT INTO users (             \
+    first_name,                                     \
+    last_name,                                      \
+    contrast,                                       \
+    text_size,                                      \
+    click_tolerance,                                \
+    brightness,                                     \
+    click_confirmation,                             \
+    score,                                          \
+    creation_score,                                 \
+    finish_score                                    \
+) VALUES (
+    \"Dan\",                                        \
+    \"Nakache\",                                    \
+    120,                                            \
+    1,                                            \
+    0,                                              \
+    150,                                            \
+    1,                                              \
+    69,                                             \
+    12,                                             \
+    30                                              \
+);"
+
+generate_theme_insertion_req() {
+    THEME_NAME=$1
+    IMAGE_URL=$2
+    echo "INSERT INTO themes (                      \
+        name, img_url                               \
+    ) VALUES (                                      \
+        \"$THEME_NAME\", \"$IMAGE_URL\"             \
+    );"
+}
+
+THEME_1_INSERTION_REQ=$(generate_theme_insertion_req "Sports" "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Football_iu_1996.jpg/1280px-Football_iu_1996.jpg")
+THEME_2_INSERTION_REQ=$(generate_theme_insertion_req "Animaux" "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Lion_d%27Afrique.jpg/800px-Lion_d%27Afrique.jpg")
+THEME_3_INSERTION_REQ=$(generate_theme_insertion_req "Géographie" "https://upload.wikimedia.org/wikipedia/commons/c/ca/Surface_analysis.gif")
+THEME_4_INSERTION_REQ=$(generate_theme_insertion_req "Jeux vidéos" "https://upload.wikimedia.org/wikipedia/it/5/50/Mario_Nintendo.png")
+THEME_5_INSERTION_REQ=$(generate_theme_insertion_req "Histoire" "https://i1.wp.com/nwuuc.org/wp-content/uploads/2019/02/evolution.png?fit=898%2C450&ssl=1")
+THEME_6_INSERTION_REQ=$(generate_theme_insertion_req "Cinéma" "https://d1fmx1rbmqrxrr.cloudfront.net/cnet/optim/i/edit/2019/07/Matrix-4-keanu-reeves-big__w770.jpg")
+
+run_sqlite_command () {
+    echo -n "$2..."
+    echo $1 | $SQLITE_COMMAND
+
+    if [ $? -ne 0 ]; then
+        echo " Failed"
+        exit 101
+    else
+        echo " Done"
+    fi
+}
+
+rm -f $DATABASE_NAME > /dev/null
+
+run_sqlite_command "$THEME_CREATION_REQ" "Creation of the \`themes\` table"
+run_sqlite_command "$QUIZZES_CREATION_REQ" "Creation of the \`quizzes\` table"
+run_sqlite_command "$QUESTIONS_CREATION_REQ" "Creation of the \`questions\` table"
+run_sqlite_command "$ANSWERS_CREATION_REQ" "Creation of the \`answers\` table"
+run_sqlite_command "$USERS_CREATION_REQ" "Creation of the \`users\` table"
+
+run_sqlite_command "$USER_INSERTION_REQ" "Adding user"
+
+run_sqlite_command "$THEME_1_INSERTION_REQ" "Adding theme 1"
+run_sqlite_command "$THEME_2_INSERTION_REQ" "Adding theme 2"
+run_sqlite_command "$THEME_3_INSERTION_REQ" "Adding theme 3"
+run_sqlite_command "$THEME_4_INSERTION_REQ" "Adding theme 4"
+run_sqlite_command "$THEME_5_INSERTION_REQ" "Adding theme 5"
+run_sqlite_command "$THEME_6_INSERTION_REQ" "Adding theme 6"

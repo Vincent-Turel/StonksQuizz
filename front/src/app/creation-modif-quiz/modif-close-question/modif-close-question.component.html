@@ -1,0 +1,39 @@
+<div class="mainBox">
+    <h1 class="title">Modifier la question :</h1>
+
+    <button class="delete" id="delete" (click)="delete()">Suprimer</button>
+
+    <form>
+        <p class="question">
+            <input type="text" name="quizName" class="textBox" id="input" />
+        </p>
+    </form>
+
+    <h1 class="rep01" id="true">
+        Bien sûr !<input
+            type="checkbox"
+            id="rep01"
+            class="checkbox"
+            (click)="fctTrue()"
+        />
+    </h1>
+    <h1 class="rep02" id="false">
+        Je ne pense pas...<input
+            type="checkbox"
+            id="rep02"
+            class="checkbox"
+            (click)="fctFalse()"
+        />
+    </h1>
+
+    <div class="button">
+        <button
+            class="back"
+            routerLink="/connected/edit-quiz-menu/modif-quiz/modif-question"
+        >
+            Annuler
+        </button>
+        <button class="modifDesc" (click)="desc()">Description</button>
+        <button class="register" (click)="validate()">Enregistrer</button>
+    </div>
+</div>

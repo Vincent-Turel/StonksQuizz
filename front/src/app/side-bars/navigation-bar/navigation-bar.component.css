@@ -1,0 +1,60 @@
+.navigation-bar {
+    display: flex;
+    flex-direction: column;
+    width: 17vw;
+    height: 90vh;
+    text-align: center;
+    float: right;
+    line-height: normal;
+}
+
+.menu {
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+    background-color: #cccccc;
+    cursor: pointer;
+}
+
+.homeImg {
+    max-height: 7vh;
+}
+
+.otherImg {
+    max-height: 12vh;
+}
+
+span {
+    padding: 10px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.doQuiz,
+.myQuiz,
+.setting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    height: 26vh;
+}
+
+.doQuiz {
+    background-color: #b6d7a8;
+}
+
+.myQuiz {
+    background-color: #9fc5f8;
+}
+
+.setting {
+    background-color: #ea9999;
+}
+
+/*# sourceMappingURL=navigation-bar.component.css.map */

@@ -1,0 +1,41 @@
+<div class="mainBox">
+    <h1 class="title">Paramètres du compte :</h1>
+
+    <div class="mainContent">
+        <div class="writeItem">
+            <input
+                type="text"
+                name="quizName"
+                class="textBox"
+                [(ngModel)]="newFirstName"
+                required
+            />
+        </div>
+        <div class="writeItem">
+            <input
+                type="text"
+                name="quizName"
+                class="textBox"
+                [(ngModel)]="newLastName"
+                required
+            />
+        </div>
+        <div class="horiz_wrapper">
+            <button
+                appSlowClick
+                class="item button red"
+                (throttleClick)="deleteUser()"
+            >
+                Supprimer le compte
+            </button>
+
+            <button
+                appSlowClick
+                class="item button green"
+                (throttleClick)="goSettingsMenu()"
+            >
+                Valider
+            </button>
+        </div>
+    </div>
+</div>

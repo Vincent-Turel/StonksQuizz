@@ -1,0 +1,22 @@
+<div class="mainBox">
+    <h1 class="title">Récapitulatif :</h1>
+
+    <button class="delete" id="delete" (click)="delete()">Suprimer</button>
+
+    <form>
+        <p class="question">
+            <input type="text" name="quizName" class="textBox" id="input" />
+        </p>
+    </form>
+
+    <h1 class="rep01" id="answer1" (click)="modifAnswer(0)">[REPONSE01]</h1>
+    <h1 class="rep02" id="answer2" (click)="modifAnswer(1)">[REPONSE02]</h1>
+    <h1 class="rep01" id="answer3" (click)="modifAnswer(2)">[REPONSE03]</h1>
+    <h1 class="rep02" id="answer4" (click)="modifAnswer(3)">[REPONSE04]</h1>
+
+    <div class="button">
+        <button class="back" (click)="resetBack()">Annuler</button>
+        <button class="modifDesc" (click)="desc()">Description</button>
+        <button class="register" (click)="validate()">Enregistrer</button>
+    </div>
+</div>

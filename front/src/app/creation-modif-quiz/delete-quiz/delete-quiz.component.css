@@ -1,0 +1,66 @@
+.mainBox {
+    display: inline-block;
+    box-sizing: content-box;
+    width: 73vw;
+    height: 73vh;
+    margin: 8vh;
+    background-color: #f6b26b;
+    border-radius: 2vw;
+}
+
+.title {
+    padding: 3%;
+    text-align: left;
+    color: black;
+    font-size: 60px;
+    margin-bottom: -4%;
+    margin-top: -1vh;
+}
+
+.title {
+    text-align: center;
+    font-size: 50px;
+}
+
+.img {
+    width: 15%;
+    height: 15%;
+}
+
+.green {
+    background-color: #ea9999;
+    width: 80%;
+    height: 40%;
+    border-radius: 1vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5em;
+    padding: 1em;
+}
+
+.button {
+    margin-top: 10vh;
+}
+
+.back {
+    outline: none;
+    font-size: 8vh;
+    border-radius: 1vh;
+    background-color: #b4a7d6;
+    padding: 1vh;
+    cursor: pointer;
+    margin-left: 5vw;
+}
+
+.confirm {
+    outline: none;
+    float: right;
+    font-size: 8vh;
+    border-radius: 1vh;
+    background-color: #ea9999;
+    padding: 1vh;
+    cursor: pointer;
+    margin-right: 5vw;
+}
+
+/*# sourceMappingURL=delete-quiz.component.css.map */

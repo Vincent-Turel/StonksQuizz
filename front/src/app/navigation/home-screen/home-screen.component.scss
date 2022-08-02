@@ -1,0 +1,86 @@
+.score-card {
+    max-width: 21.8vw;
+    max-height: 8vh;
+    min-width: 3vw;
+    min-height: 3vh;
+    background: #ffffff;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+    align-items: center;
+    padding: 1em 0.5em;
+    color: #000000;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+.block1 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    max-height: 65vh;
+}
+.block1_2 {
+    flex: 1;
+    max-width: 49vw;
+}
+.block1_2_1 {
+    margin-top: 15vh;
+    display: inline-flex;
+    justify-content: space-around;
+    width: 49vw;
+}
+.block1_2_2 {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block2 {
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.block2_1,
+.block2_2,
+.block2_3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.avatar {
+    max-height: 50vh;
+    max-width: 50vh;
+    margin: 1em;
+    border: solid 1.5em #8c8c8c;
+}
+.smiley {
+    max-height: 25vh;
+    max-width: 25vh;
+}
+.bubble-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bubbleEmoji {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    min-width: 25vw;
+    font-size: 2.4em;
+    font-weight: bold;
+    line-height: 7vh;
+    opacity: 0.8;
+    text-align: center;
+    background-color: #f2f2f2;
+    border: solid black 0.2em;
+    -webkit-border-radius: 5vh;
+}
+.name {
+    //max-width: 20vh;
+    font-size: 2em;
+    font-weight: bold;
+}

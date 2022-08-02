@@ -1,0 +1,44 @@
+<div class="mainBox">
+    <h1 class="title">Réglages :</h1>
+
+    <div class="mainMenu">
+        <div class="horiz_wrapper">
+            <div class="blueItem">Visuel</div>
+            <div class="writeItem">
+                <div
+                    appSlowClick
+                    class="edit button"
+                    (throttleClick)="goVisualSettings()"
+                >
+                    Modifier
+                </div>
+            </div>
+        </div>
+
+        <div class="horiz_wrapper">
+            <div class="blueItem">Moteur</div>
+            <div class="writeItem">
+                <div
+                    appSlowClick
+                    class="edit button"
+                    (throttleClick)="goMotorSettings()"
+                >
+                    Modifier
+                </div>
+            </div>
+        </div>
+
+        <div class="horiz_wrapper">
+            <div class="blueItem">Compte</div>
+            <div class="writeItem">
+                <div
+                    appSlowClick
+                    class="edit button"
+                    (throttleClick)="goAccountSettings()"
+                >
+                    Modifier
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

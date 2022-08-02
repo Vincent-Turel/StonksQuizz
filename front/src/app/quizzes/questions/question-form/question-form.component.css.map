@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../../../../styles/card.scss","../../../../styles/variables.scss","question-form.component.scss"],"names":[],"mappings":"AAEA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGJ;EACI,kBCXI;EDYJ;EACA,OCdG;EDeH;EACA;;;AAGJ;EACI;;;AEnBJ;EACI;;;AAGJ;EACI;EACA","file":"question-form.component.css"}

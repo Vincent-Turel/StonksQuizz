@@ -1,0 +1,28 @@
+<div class="mainBox">
+    <h1 class="title">Entrez ici la nouvelle réponse :</h1>
+
+    <form>
+        <p class="quizName">
+            <textarea
+                type="text"
+                name="quizName"
+                class="textBox"
+                id="answer"
+            ></textarea>
+        </p>
+    </form>
+
+    <div class="jsp2">
+        <button
+            class="back"
+            routerLink="/connected/edit-quiz-menu/modif-quiz/modif-question/open-question"
+        >
+            Annuler
+        </button>
+        <div class="jsp3">
+            <h1 class="boxtext">Est juste ?</h1>
+            <input type="checkbox" id="check" class="checkbox" />
+        </div>
+        <button class="register" (click)="validate()">Enregistrer</button>
+    </div>
+</div>

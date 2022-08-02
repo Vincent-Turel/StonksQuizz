@@ -1,0 +1,26 @@
+<div class="mainBox">
+    <h1 class="title">Votre quiz :</h1>
+
+    <form>
+        <p class="question">
+            <input type="text" name="quizName" class="textBox" id="titleQuiz" />
+        </p>
+    </form>
+
+    <img
+        id="img"
+        src="../assets/images/default.png"
+        class="quizPicture"
+        (click)="picture()"
+    />
+
+    <h1 class="recap" id="rec">
+        Quiz avec [nb] questions. Votre quiz est terminé !
+    </h1>
+
+    <button appSlowClick class="next" (throttleClick)="validate()">
+        Ajouter le quiz
+    </button>
+
+    <button class="exit" (click)="goBack()">Revenir en arrière</button>
+</div>

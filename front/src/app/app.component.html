@@ -1,0 +1,12 @@
+<app-header *ngIf="!isConnected()" id="b1"></app-header>
+<app-navigation-bar *ngIf="!isConnected()" id="n1"></app-navigation-bar>
+
+<app-header-loggin *ngIf="isConnected()" id="b2"></app-header-loggin>
+<app-navigation-bar-loggin
+    *ngIf="isConnected()"
+    id="n2"
+></app-navigation-bar-loggin>
+
+<div class="main-content">
+    <router-outlet></router-outlet>
+</div>

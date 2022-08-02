@@ -1,0 +1,62 @@
+@import "../../../styles/main-box";
+@import "../../../styles/variables";
+
+.title {
+    font-size: 50px;
+}
+
+.question {
+    text-align: center;
+    background-color: white;
+    width: 91%;
+    height: 20%;
+    margin-left: 3%;
+    padding: 10px;
+    margin-top: 4%;
+    border-radius: 1vw;
+    font-size: 5vh;
+    white-space: normal;
+}
+
+.rep01 {
+    background-color: white;
+    width: 43%;
+    padding: 20px;
+    border-radius: 1vw;
+    margin-left: 20px;
+    text-align: center;
+    white-space: normal;
+}
+
+.rep02 {
+    background-color: white;
+    width: 43%;
+    padding: 20px;
+    border-radius: 1vw;
+    margin-left: 50%;
+    margin-top: -93px;
+    text-align: center;
+    white-space: normal;
+}
+
+.next {
+    display: flex;
+    margin-left: 110vh;
+    font-size: 8vh;
+    border-radius: 1vh;
+    margin-top: 3vh;
+    background-color: $green;
+    padding: 1vh;
+    cursor: pointer;
+}
+
+.exit {
+    display: flex;
+    margin-left: 10vh;
+    font-size: 8vh;
+    border-radius: 1vh;
+    margin-top: -12vh;
+    background-color: #b4a7d6;
+    padding: 1vh;
+    cursor: pointer;
+}

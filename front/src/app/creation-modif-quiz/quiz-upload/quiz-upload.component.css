@@ -1,0 +1,51 @@
+.mainBox {
+    display: inline-block;
+    box-sizing: content-box;
+    width: 73vw;
+    height: 73vh;
+    margin: 8vh;
+    background-color: #f6b26b;
+    border-radius: 2vw;
+}
+
+.title {
+    padding: 3%;
+    text-align: left;
+    color: black;
+    font-size: 60px;
+    margin-bottom: -4%;
+    margin-top: -1vh;
+}
+
+.title {
+    text-align: center;
+}
+
+.img {
+    width: 15%;
+    height: 15%;
+}
+
+.green {
+    background-color: #b6d7a8;
+    width: 80%;
+    height: 40%;
+    border-radius: 1vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5em;
+    padding: 1em;
+}
+
+.next {
+    display: flex;
+    margin-left: 110vh;
+    font-size: 8vh;
+    border-radius: 1vh;
+    margin-top: 12vh;
+    background-color: #b6d7a8;
+    padding: 1vh;
+    cursor: pointer;
+}
+
+/*# sourceMappingURL=quiz-upload.component.css.map */

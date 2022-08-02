@@ -1,0 +1,14 @@
+@import "../navigation-bar/navigation-bar.component.css";
+.setting {
+    background-color: #666666;
+}
+
+.doQuiz {
+    background-color: #9fc5f8;
+}
+
+.myQuiz {
+    background-color: #b6d7a8;
+}
+
+/*# sourceMappingURL=navigation-bar-loggin.component.css.map */

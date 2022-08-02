@@ -1,0 +1,92 @@
+@import "../new-close-question/new-close-question.component.css";
+.mainBox {
+    display: inline-block;
+    box-sizing: content-box;
+    width: 73vw;
+    height: 73vh;
+    margin: 8vh;
+    background-color: #f6b26b;
+    border-radius: 2vw;
+}
+
+.title {
+    padding: 3%;
+    text-align: left;
+    color: black;
+    font-size: 60px;
+    margin-bottom: -4%;
+    margin-top: -1vh;
+}
+
+.question {
+    padding: 3%;
+    text-align: left;
+    color: black;
+    font-size: 40px;
+    margin-top: 0;
+    background-color: #f6b26b;
+    margin-left: 1vh;
+    margin-bottom: -2vh;
+}
+
+.textBox {
+    outline: none;
+    margin-top: 1vh;
+    width: 100%;
+    height: 10vh;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    font-size: 8vh;
+}
+
+.back {
+    outline: none;
+    display: inline-block;
+    font-size: 8vh;
+    border-radius: 1vh;
+    background-color: #b4a7d6;
+    padding: 1vh;
+    cursor: pointer;
+    margin-left: 10vh;
+}
+
+.register {
+    outline: none;
+    display: inline-block;
+    font-size: 8vh;
+    float: right;
+    border-radius: 1vh;
+    background-color: #b6d7a8;
+    padding: 1vh;
+    cursor: pointer;
+    margin-right: 10vh;
+}
+
+.modifDesc {
+    outline: none;
+    display: inline-block;
+    font-size: 8vh;
+    margin-left: 4vw;
+    border-radius: 1vh;
+    background-color: white;
+    padding: 1vh;
+    cursor: pointer;
+}
+
+.delete {
+    outline: none;
+    font-size: 8vh;
+    margin-top: -5vh;
+    float: right;
+    border-radius: 1vh;
+    background-color: #ea9999;
+    padding: 1vh;
+    cursor: pointer;
+    margin-right: 10vh;
+}
+
+/*# sourceMappingURL=modif-close-question.component.css.map */

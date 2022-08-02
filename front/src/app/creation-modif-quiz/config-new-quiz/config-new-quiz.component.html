@@ -1,0 +1,26 @@
+<div class="mainBox">
+    <h1 class="title">Pour commencer :</h1>
+
+    <form>
+        <p class="quizName">
+            Entrez ici le nom de votre quiz :
+            <input type="text" name="quizName" class="textBox" id="input" />
+        </p>
+    </form>
+
+    <img
+        appSlowClick
+        id="imgQ"
+        src=""
+        class="quizPicture"
+        (throttleClick)="picture()"
+    />
+
+    <h1 appSlowClick class="selectImg" (throttleClick)="picture()">
+        + Ajoutez votre image
+    </h1>
+
+    <button appSlowClick class="button" (throttleClick)="goQuestion()">
+        Suivant
+    </button>
+</div>

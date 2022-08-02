@@ -1,0 +1,28 @@
+<div class="mainBox">
+    <h1 class="title">Que souhaitez vous faire ?</h1>
+    <div appSlowClick class="newQuiz" (throttleClick)="goNewQuizTheme()">
+        <div class="flexBox">
+            <img
+                [ngStyle]="{ height: getImgHeight() }"
+                class="menuImage"
+                src="../assets/images/modif.png"
+                alt="start"
+            />
+
+            <h1 class="dialogTitle">Créer un tout<br />nouveau quiz</h1>
+        </div>
+    </div>
+
+    <div appSlowClick class="modifQuiz" (throttleClick)="goEditQuiz()">
+        <div class="flexBox">
+            <img
+                [ngStyle]="{ height: getImgHeight() }"
+                class="menuImage"
+                src="../assets/images/book.png"
+                alt="start"
+            />
+
+            <h1 class="dialogTitle">Modifier ou<br />voir mes quiz</h1>
+        </div>
+    </div>
+</div>

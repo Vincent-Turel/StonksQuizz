@@ -1,0 +1,37 @@
+<div class="mainBox">
+    <h1 class="title">Pour commencer :</h1>
+    <form class="user-form" [formGroup]="userForm">
+        <label for="first-name">
+            <input
+                class="input-custom"
+                placeholder="Prénom"
+                type="text"
+                id="first-name"
+                [formControlName]="'firstName'"
+            />
+        </label>
+        <label for="last-name">
+            <input
+                class="input-custom"
+                placeholder="Nom"
+                type="text"
+                id="last-name"
+                [formControlName]="'lastName'"
+            />
+        </label>
+        <div class="buttons">
+            <button type="button" class="clear-button" (click)="clearAll()">
+                Effacer
+            </button>
+            <button
+                appSlowClick
+                type="button"
+                class="validate-button"
+                (click)="createUser()"
+            >
+                <!--disabled="userForm.invalid"-->
+                Valider
+            </button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,24 @@
+@import "../styles/variables.scss";
+
+.main-content {
+    height: 100vh;
+    width: 100vw;
+    background-color: $app-background-color;
+    margin: 0;
+    //padding: 0 1em 0 1em;
+}
+
+$brightness: var(--brightness);
+$contrast: var(--contrast);
+$font: var(--font);
+
+$hitbox: var(--hitbox);
+$size: var(--size);
+
+html {
+    filter: brightness($brightness) contrast($contrast);
+    font-size: $font;
+    position: fixed;
+    overflow-y: scroll;
+    width: 100%;
+}

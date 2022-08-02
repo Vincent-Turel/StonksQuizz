@@ -1,0 +1,78 @@
+.mainBox {
+    display: inline-block;
+    box-sizing: content-box;
+    width: 73vw;
+    height: 73vh;
+    margin: 8vh;
+    background-color: #f6b26b;
+    border-radius: 2vw;
+}
+
+.title {
+    padding: 3%;
+    text-align: left;
+    color: black;
+    font-size: 60px;
+    margin-bottom: -4%;
+    margin-top: -1vh;
+}
+
+.title {
+    font-size: 50px;
+    margin-top: -1vh;
+    margin-bottom: -2%;
+}
+
+.juste {
+    display: flex;
+    float: right;
+    box-sizing: content-box;
+    background-color: white;
+    font-size: 4vw;
+    padding: 2vh;
+    border-radius: 2vw;
+    margin-top: -7vh;
+    margin-right: 4vw;
+}
+
+.next {
+    outline: none;
+    display: flex;
+    margin-left: 123vh;
+    font-size: 6vh;
+    border-radius: 1vh;
+    margin-top: -7vh;
+    background-color: #b6d7a8;
+    padding: 1vh;
+    cursor: pointer;
+}
+
+.textBox {
+    outline: none;
+    border: 2px solid #ccc;
+    background-color: #f8f8f8;
+    resize: none;
+    font-size: 6vh;
+    margin-left: 2vh;
+    width: 85%;
+}
+
+.box {
+    box-sizing: content-box;
+    background-color: white;
+    border-radius: 2vw;
+    padding: 1px;
+    width: 80%;
+    margin: 1vw;
+}
+
+.checkbox {
+    display: flex;
+    float: right;
+    height: 60px;
+    width: 60px;
+    margin-top: -10vh;
+    margin-right: 3vh;
+}
+
+/*# sourceMappingURL=new-open-question.component.css.map */

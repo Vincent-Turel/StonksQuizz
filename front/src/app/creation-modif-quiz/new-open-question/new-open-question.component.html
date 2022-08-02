@@ -1,0 +1,89 @@
+<div class="mainBox">
+    <h1 class="title">Vos réponses :</h1>
+
+    <h1 class="juste">Juste ?</h1>
+
+    <div class="box">
+        <form>
+            <p class="question">
+                <input
+                    type="text"
+                    name="quizName"
+                    class="textBox"
+                    id="textRep01"
+                />
+            </p>
+        </form>
+        <input
+            appSlowClick
+            type="checkbox"
+            id="rep01"
+            class="checkbox"
+            (throttleClick)="fctRep01()"
+        />
+    </div>
+
+    <div class="box">
+        <form>
+            <p class="question">
+                <input
+                    type="text"
+                    name="quizName"
+                    class="textBox"
+                    id="textRep02"
+                />
+            </p>
+        </form>
+        <input
+            appSlowClick
+            type="checkbox"
+            id="rep02"
+            class="checkbox"
+            (throttleClick)="fctRep02()"
+        />
+    </div>
+
+    <div class="box">
+        <form>
+            <p class="question">
+                <input
+                    type="text"
+                    name="quizName"
+                    class="textBox"
+                    id="textRep03"
+                />
+            </p>
+        </form>
+        <input
+            appSlowClick
+            type="checkbox"
+            id="rep03"
+            class="checkbox"
+            (throttleClick)="fctRep03()"
+        />
+    </div>
+
+    <div class="box">
+        <form>
+            <p class="question">
+                <input
+                    type="text"
+                    name="quizName"
+                    class="textBox"
+                    id="textRep04"
+                />
+            </p>
+        </form>
+        <input
+            appSlowClick
+            type="checkbox"
+            id="rep04"
+            class="checkbox"
+            (throttleClick)="fctRep04()"
+        />
+    </div>
+
+    <button appSlowClick class="next" (throttleClick)="validate()">
+        Suivant
+    </button>
+</div>

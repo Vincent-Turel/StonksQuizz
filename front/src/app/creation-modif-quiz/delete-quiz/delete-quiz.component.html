@@ -1,0 +1,22 @@
+<div class="mainBox">
+    <div class="green">
+        <div style="text-align: center">
+            <img src="../assets/images/warning.png" class="img" />
+        </div>
+
+        <h1 class="title" id="text">Supprimer définitivement le quiz ?</h1>
+    </div>
+
+    <div class="button">
+        <button
+            class="back"
+            routerLink="/connected/edit-quiz-menu/modif-quiz"
+            id="back"
+        >
+            Annuler
+        </button>
+        <button class="confirm" id="confirm" (click)="validate()">
+            Confirmer
+        </button>
+    </div>
+</div>

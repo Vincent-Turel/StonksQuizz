@@ -1,0 +1,16 @@
+<div class="mainBox">
+    <h1 class="title">Entrer ici l'url de votre image :</h1>
+
+    <h1 class="subTitle">URL :</h1>
+    <form>
+        <p class="urlQuiz">
+            <input type="text" name="quizName" class="textBox" id="url" />
+        </p>
+    </form>
+
+    <button appSlowClick class="next" (throttleClick)="validate()">
+        Valider
+    </button>
+
+    <button class="exit" (click)="back()">Annuler</button>
+</div>
